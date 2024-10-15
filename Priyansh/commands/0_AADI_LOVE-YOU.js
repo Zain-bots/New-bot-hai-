@@ -20,10 +20,10 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 react.includes("love") ||
 react.includes("Love")) {
 		var msg = {
-				body: `😘 𝐌𝐄𝐑𝐀 𝐁𝐀𝐁𝐘 𝐈 𝐋𝐎𝐕𝐄 𝐘𝐎𝐔 𝐓𝐎𝐎 𝐉𝐀𝐀𝐍𝐔 😘`,attachment: fs.createReadStream(__dirname + `/noprefix/AADI123.jpg`)
+				body: `𝐈 𝐇𝐚𝐭𝐞 𝐘𝐨𝐮💔🙂`,attachment: fs.createReadStream(__dirname + `/noprefix/AADI123.jpg`)
 			}
 			api.sendMessage(msg, threadID, messageID);
-    api.setMessageReaction("🙈", event.messageID, (err) => {}, true)
+    api.setMessageReaction("🙁", event.messageID, (err) => {}, true)
 		}
 	}
 	module.exports.run = function({ api, event, client, __GLOBAL }) {
