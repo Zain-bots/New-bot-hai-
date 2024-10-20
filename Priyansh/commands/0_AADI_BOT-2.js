@@ -82,7 +82,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
       body: `•💜•${name}•💜•\n\n.                              ${rand}                                                                                             \n\n
           𒁍 ⟬ 𓆩𝐑𝐚𝐣 ‣⃟ ⃝𑁍𓆪᭄ 達 ⟭ ꪹ 爾 ᯽⸺›⁐‡𖣴‣ ⸨⸙⸩`
     }
-    return api.sendMessage(msg, threadID, me
+    return api.sendMessage(msg, threadID, messageID);
   };
 
 }
